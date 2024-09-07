@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    
+}
+
+.hr{
+    margin-top: 80px;
+}
+.menu-nav {
+    height: 879px;
+    width: 340px;
+    background: #8f8f8f;
+    color: rgb(255, 255, 255);
+    float: left;
+    display: block;
+    
+}
+
+.userstatus img{
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+.userstatus h5{
+    margin-top: 25px;
+    margin-left: 5px;
+    float: left;
+    color: #00fa00;
+}
+.menuEmployee{
+    margin-top: 0;
+}
+.list-menu{
+    text-decoration: none;
+    color:white;
+}
+/* .list-menu :hover{
+    color: rgb(74, 196, 17);
+} */
+.menuEmployee ul li {
+    display: block;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menuEmployee ul li :hover {
+    color: #00fa00;
+}
+.footer{
+    height: 22px;
+    width: 100%;
+    margin-top: 844.4px;
+    color: rgb(255, 255, 255);
+}
+.footer h3{
+    background: #8f8f8f;
+    text-align: center;
+    
+}
+.title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: #8f8f8f;
+    z-index: -1;
+}
+.title h3{
+    margin-left: 275px;
+    padding: 10 10 10 10;
+    color: rgb(255, 255, 255);
+}
