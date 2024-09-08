@@ -1,0 +1,134 @@
+/* AnimalTable.css */
+
+/* Container styling */
+.container {
+  padding: 20px;
+  margin: 0 auto 100px; /* ใช้ auto เพื่อจัดตำแหน่งกลาง */
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+}
+
+/* Heading styling */
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Flexbox for rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Column styling for responsive layout */
+.column {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns with gap */
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Animal item styling */
+.animal-item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for animal items */
+.animal-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for animal images */
+.animal-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Maintain aspect ratio and cover the element's area */
+  display: block;
+  border-radius: 8px;
+}
+
+/* Styling for text overlay on animal items */
+.animal-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 8px 8px; /* Only round bottom corners */
+}
+
+/* Upper text styling */
+.animal-text-upper {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Title text styling */
+.animal-text-title {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+/* Add button styling */
+.add-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for add button */
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Form styling */
+.animal-form {
+  margin: 20px 0;
+}
+
+/* Input field styling in form */
+.animal-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Added border for better visibility */
+  border-radius: 5px; /* Rounded corners for input fields */
+}
+
+/* Submit button styling in form */
+.animal-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for submit button */
+.animal-form button:hover {
+  background-color: #45a049;
+}
