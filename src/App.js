@@ -11,6 +11,8 @@ import CreateAnimal from './components/create/create_animal_cpnt';
 import EditAnimal from './components/edit/edit_animal_cpnt'
 import AnimalTypeTable from './components/table/animal_type_table_cpnt';
 import UserTable from './components/table/user_table_cpnt';
+import UserCreate from './components/create/create_user_cpnt'
+import UserEdit from './components/edit/edit_user_cpnt'
 import Login from './components/login/login_cpnt';
 import Logout from './components/login/logout_cpnt';
 
@@ -63,6 +65,16 @@ const AppWrapper = () => {
           <Route path='/users' element={
             <PrivateRoute>
               <UserTable />
+            </PrivateRoute>
+          } />
+          <Route path='/users/create' element={
+            <PrivateRoute>
+              <UserCreate/>
+            </PrivateRoute>
+          } />
+          <Route path='/users/:username' element={
+            <PrivateRoute>
+              <UserEdit/>
             </PrivateRoute>
           } />
           <Route path="*" element={<Navigate to="/home" />} />
